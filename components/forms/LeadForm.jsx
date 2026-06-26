@@ -31,8 +31,8 @@ export default function LeadForm() {
     }
 
     // Target agency WhatsApp number (e.g., +91 98765 43210)
-    const whatsappNumber = "919876543210"; 
-    
+    const whatsappNumber = "919033090280";
+
     // Construct pre-filled message text
     const text = `Hello Shree Krushna Developers,
 
@@ -175,9 +175,6 @@ Please share the latest brochures and site availability details.`;
         </button>
       </form>
 
-      <div className="text-[10px] text-text-secondary text-center leading-normal border-t border-bg-tertiary pt-4">
-        🔒 Your data is fully encrypted and never shared. We follow strict privacy guidelines.
-      </div>
     </div>
   );
 }

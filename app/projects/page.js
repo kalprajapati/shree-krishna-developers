@@ -143,9 +143,9 @@ export default function ProjectsPage() {
 
   const filteredProjects = allProjects.filter((project) => {
     const matchesFilter = selectedFilter === "All" || project.category === selectedFilter;
-    const matchesSearch = project.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                          project.location.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          project.subtitle.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesSearch = project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      project.location.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      project.subtitle.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesFilter && matchesSearch;
   });
 
@@ -170,7 +170,7 @@ export default function ProjectsPage() {
             <span>Exclusive Catalog</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold font-playfair tracking-tight">
-            Dholera SIR Portfolio
+            Projects
           </h1>
           <p className="text-sm text-text-secondary max-w-xl font-light leading-relaxed">
             Browse our pre-vetted, legal-title cleared residential, commercial, and industrial plots. Filter by zone and infrastructure category.
@@ -185,11 +185,10 @@ export default function ProjectsPage() {
               <button
                 key={filter}
                 onClick={() => setSelectedFilter(filter)}
-                className={`px-4 py-2 rounded-xl text-xs font-semibold uppercase tracking-wider transition-all duration-300 cursor-pointer ${
-                  selectedFilter === filter
+                className={`px-4 py-2 rounded-xl text-xs font-semibold uppercase tracking-wider transition-all duration-300 cursor-pointer ${selectedFilter === filter
                     ? "bg-text-primary text-white shadow-sm"
                     : "bg-bg-secondary text-text-secondary hover:text-text-primary"
-                }`}
+                  }`}
               >
                 {filter}
               </button>

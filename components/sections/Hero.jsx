@@ -53,8 +53,8 @@ export default function Hero() {
           {/* Heading */}
           <div className="flex flex-col gap-4">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-text-primary leading-[1.1] font-playfair">
-              Secure Your Future in <br />
-              <span className="text-shimmer">Dholera SIR</span>
+              INVEST IN DHOLERA <br />
+              <span className="text-shimmer">SECURE FUTURE</span>
             </h1>
 
             {/* Powerful quote */}
