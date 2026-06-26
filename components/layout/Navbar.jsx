@@ -78,7 +78,7 @@ export default function Navbar() {
             className="flex flex-col select-none"
           >
             <span className="font-playfair text-xl md:text-2xl font-bold tracking-tight text-text-primary">
-              SHREE KRUSHNA
+              SHREE KRISHNA
             </span>
             <span className="text-[10px] tracking-[0.3em] font-medium text-brand-gold font-inter -mt-1">
               DEVELOPERS
