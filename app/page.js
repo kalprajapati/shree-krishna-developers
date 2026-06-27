@@ -1,7 +1,9 @@
 "use client";
 
 import Hero from "@/components/sections/Hero";
+import WhyDholera from "@/components/sections/WhyDholera";
 import Projects from "@/components/sections/Projects";
+import InvestmentGrowth from "@/components/sections/InvestmentGrowth";
 import AboutUs from "@/components/sections/AboutUs";
 import Services from "@/components/sections/Services";
 import { motion } from "framer-motion";
@@ -58,8 +60,14 @@ Please confirm if this slot is available.`;
       {/* Hero Section */}
       <Hero />
 
+      {/* Why Dholera Section */}
+      <WhyDholera />
+
       {/* Featured Projects Section */}
       <Projects />
+
+      {/* Investment Growth Section */}
+      <InvestmentGrowth />
 
       {/* About Us Section */}
       <AboutUs />
