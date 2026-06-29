@@ -77,7 +77,9 @@ export default function Navbar() {
             onClick={(e) => handleLinkClick(e, "/#home")}
             className="flex flex-col select-none"
           >
-            <span className="font-playfair text-xl md:text-2xl font-bold tracking-tight text-text-primary">
+            <span className={`font-playfair text-xl md:text-2xl font-bold tracking-tight transition-colors duration-300 ${
+              isScrolled ? "text-text-primary" : "text-white"
+            }`}>
               SHREE KRISHNA
             </span>
             <span className="text-[10px] tracking-[0.3em] font-medium text-brand-gold font-inter -mt-1">
@@ -92,7 +94,11 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleLinkClick(e, link.href)}
-                className="text-sm font-medium tracking-wide text-text-secondary hover:text-brand-gold transition-colors duration-300"
+                className={`text-sm font-medium tracking-wide transition-colors duration-300 ${
+                  isScrolled
+                    ? "text-text-secondary hover:text-brand-gold"
+                    : "text-white/80 hover:text-brand-gold"
+                }`}
               >
                 {link.name}
               </a>
@@ -104,7 +110,11 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={(e) => handleLinkClick(e, "/#contact")}
-              className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full border border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-white transition-all duration-300 text-xs font-semibold uppercase tracking-wider"
+              className={`inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full border transition-all duration-300 text-xs font-semibold uppercase tracking-wider ${
+                isScrolled
+                  ? "border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-white"
+                  : "border-white/30 text-white hover:bg-white hover:text-text-primary"
+              }`}
             >
               Inquire Now
               <ArrowUpRight className="w-3.5 h-3.5" />
@@ -114,7 +124,9 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-text-primary focus:outline-none p-1"
+            className={`md:hidden focus:outline-none p-1 transition-colors duration-300 ${
+              isOpen || isScrolled ? "text-text-primary" : "text-white"
+            }`}
             aria-label="Toggle menu"
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

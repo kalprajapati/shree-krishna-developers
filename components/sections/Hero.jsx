@@ -25,12 +25,12 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-700 opacity-80"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1920&q=80')`,
+          backgroundImage: `url('/dholera_2.png')`,
         }}
       />
 
-      {/* Gradient Overlay for Apple-like Bright Minimalist Look */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-bg-secondary via-white/85 to-bg-secondary/60" />
+      {/* Gradient Overlay for Left-to-Right Black to White Look */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-white/10" />
 
       {/* Decorative Gold Glow Effects */}
       <div className="absolute top-1/4 left-1/10 w-96 h-96 bg-brand-gold/5 rounded-full blur-[100px] pointer-events-none" />
@@ -52,13 +52,13 @@ export default function Hero() {
 
           {/* Heading */}
           <div className="flex flex-col gap-4">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-text-primary leading-[1.1] font-playfair">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-[1.1] font-playfair">
               INVEST IN DHOLERA <br />
               <span className="text-shimmer">SECURE FUTURE</span>
             </h1>
 
             {/* Powerful quote */}
-            <p className="text-lg md:text-xl text-text-secondary font-light max-w-xl leading-relaxed italic">
+            <p className="text-lg md:text-xl text-white/80 font-light max-w-xl leading-relaxed italic">
               "The future belongs to those who build it. Dholera SIR is India's first greenfield smart city—where unmatched scale meets safe, high-yield land investments."
             </p>
           </div>
@@ -69,13 +69,13 @@ export default function Hero() {
               <div className="w-5 h-5 rounded-full bg-brand-gold/10 flex items-center justify-center text-brand-gold">
                 <ShieldCheck className="w-3.5 h-3.5" />
               </div>
-              <span className="text-xs font-medium text-text-primary/95">100% Government Approved Plots</span>
+              <span className="text-xs font-medium text-white/90">100% Government Approved Plots</span>
             </div>
             <div className="flex items-center gap-3">
               <div className="w-5 h-5 rounded-full bg-brand-gold/10 flex items-center justify-center text-brand-gold">
                 <ShieldCheck className="w-3.5 h-3.5" />
               </div>
-              <span className="text-xs font-medium text-text-primary/95">Next-gen Smart Infrastructure</span>
+              <span className="text-xs font-medium text-white/90">Next-gen Smart Infrastructure</span>
             </div>
           </div>
 
@@ -83,14 +83,14 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <button
               onClick={() => scrollToSection("contact")}
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-text-primary hover:bg-brand-gold text-white font-semibold text-sm uppercase tracking-wider transition-all duration-300 shadow-sm hover:shadow-md cursor-pointer flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-gold hover:bg-brand-gold-dark text-white font-semibold text-sm uppercase tracking-wider transition-all duration-300 shadow-sm hover:shadow-lg hover:shadow-brand-gold/20 cursor-pointer flex items-center justify-center gap-2"
             >
               Book Consultation
               <ArrowRight className="w-4 h-4" />
             </button>
             <button
               onClick={() => scrollToSection("projects")}
-              className="w-full sm:w-auto px-8 py-4 rounded-xl border border-text-primary/10 hover:border-brand-gold hover:text-brand-gold text-text-primary bg-white/40 font-semibold text-sm uppercase tracking-wider transition-all duration-300 cursor-pointer flex items-center justify-center"
+              className="w-full sm:w-auto px-8 py-4 rounded-xl border border-white/20 hover:border-brand-gold hover:text-brand-gold text-white bg-white/10 font-semibold text-sm uppercase tracking-wider transition-all duration-300 cursor-pointer flex items-center justify-center"
             >
               Explore Projects
             </button>
